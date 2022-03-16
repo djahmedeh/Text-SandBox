@@ -2,7 +2,7 @@ String title = "Horray!";
 PFont titleFont; 
 //
 //Display Geometry
-size(500, 600); //fullscreen(); displayWidth, displayHeight
+fullScreen(); //size(500, 600); displayWidth, displayHeight
 //Display orientation: landscape, portrait, and square
 //Population
 titleX = displayWidth*1/5;
