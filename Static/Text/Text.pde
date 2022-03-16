@@ -1,8 +1,10 @@
 String title = "Horray!";
 PFont titleFont; 
+float titleX, titleY, titleWidth, titleHeight
+color resetDefaultInk=FFFFFF, purple=#2C08FF;
 //
 //Display Geometry
-fullScreen(); //size(500, 600); displayWidth, displayHeight
+size(500, 600) ; //fullScreen(); displayWidth, displayHeight
 //Display orientation: landscape, portrait, and square
 //Population
 titleX = displayWidth*1/5;
@@ -18,3 +20,10 @@ titleFont = createFont("Montserrat-ExtraBold", 50); //Verify font exists
 //
 //Laying out text space and typographical features
 rect(titleX, titleY, titleWidth, titleHeight); 
+//Drawing Text
+fill(purple); //Ink, hexidecimal copied form Colour Selector
+textAlign(CENTER, CENTER); //Align Horizontal, vertical, see Processing.org / Reference
+//Values; [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOME | BASELINE ]
+textFont(titleFont, 10); //Change the number until it fits , largest text
+text(title, titleX, titleY, titleWidth, titleHeight );
+fill(resetDefaultInk);
